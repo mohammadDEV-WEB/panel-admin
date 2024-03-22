@@ -1,0 +1,169 @@
+@font-face {
+    font-family: yekan;
+    src: url(../assetse/Yekan.ttf);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: yekan;
+}
+a , Link{
+    text-decoration: none;
+    outline: 0;
+}
+
+li{
+    list-style-type: none;
+}
+body{
+    background-image: url(../assetse/download\ \(1\).jpg);
+    background-size: 480px;
+}
+/* ====================sidebar style====================== */
+.list-item-link{
+    color: white;
+}
+.sidebar{
+    background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.9)), url(../assetse/download.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    right: 0;
+    box-shadow: -5px -5px 10px #999;
+    z-index: 999;
+}
+.list{
+    margin-top: 50px;
+}
+.list-item{
+    text-align: right;
+    padding-right: 30px;
+    padding-block: 15px;
+}
+.list-item-link{
+    font-size: 15px;
+}
+.list-item-link:hover{
+    text-decoration: none;
+    color: rgb(1, 124, 172);
+}
+/* =======================users style==================== */
+.users{
+    padding-top: 30px;
+    padding-inline: 30px;
+    width: calc(100% - 205px);
+    margin-bottom: 40px;
+    width: 100%;
+}
+.users-title .title{
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.search-add{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.right{
+    width: 35%;
+}
+.search-input{
+    width: 343px;
+    text-align: right;
+    height: 30px;
+    border: 0;
+    border-radius: 8px;
+    padding: 0 10px;
+    box-shadow: 0 0 10px #999;
+    outline: 0;
+}
+.add-button{
+    background-color: rgb(0, 101, 0);
+    border-radius: 5px;
+    font-size: 18px;
+}
+.add-button span{
+    line-height: 0;
+}
+table{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 10px #999;
+    border-radius: 3px;
+}
+.trash-icon{
+    color: red;
+    margin-right: 10px;
+    font-size: large;
+}
+.edit-icon{
+    color: rgb(142, 142, 15);
+    font-size: large;
+}
+/* =======================post style====================== */
+.post-title{
+    margin: 70px 0;
+    text-align: center;
+    margin-right: 200px;
+}
+/* =======================gallery style====================== */
+.gallery-title{
+    margin: 70px 0;
+    text-align: center;
+    margin-right: 200px;
+}
+/* =======================todo style====================== */
+.todo-title{
+    margin: 70px 0;
+    text-align: center;
+    margin-right: 200px;
+}
+
+
+.menu-icon{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+}
+
+.form-add{
+    text-align: right;
+    width: 500px;
+    background-color: #ebf4fa;
+    padding: 20px 10px ;
+}
+.add-user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.label{
+    font-weight: 400;
+    font-size: 15px;
+}
+.input-user{
+    outline: 0;
+    height: 30px;
+    border: 0;
+    box-shadow: 1px 1px 2px #999;
+   text-align: right;
+   padding: 10px;
+}
+
+.input-addr{
+    width: 48%;
+    height: 25px !important;
+}
+.input-address{
+    gap: 10px;
+    justify-content: space-between;
+}

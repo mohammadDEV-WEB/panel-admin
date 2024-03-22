@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Content from "./content";
+import Sidebar from "./sidebar";
+import ContextBtn from "./context/contextBtn";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
+  const [shawMenu, setShawMenu] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <row>
+        <ContextBtn.Provider value={{ shawMenu, setShawMenu }}>
+          <Sidebar />
+          <Content />
+        </ContextBtn.Provider>
+      </row>
+    </BrowserRouter>
   );
 }
 
